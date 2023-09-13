@@ -3,15 +3,16 @@ import { useState } from "react";
 function Counter(){
 
  let [state, setState] = useState(100)
-
-    // function increaseCounter(){
+ let i=state;
+console.log('hyyyy conter component ran',i, useState(state), state)
+    function increaseCounter(){
     
-    //     console.log(counter)
-    // }
-    // function decreaseCounter(){
+        setState(state => state + 1)
+    }
+    function decreaseCounter(){
        
-    //     console.log(counter)
-    // }
+       setState(state => state -1)
+    }
     return(
         <div>
             <h1>
@@ -19,8 +20,8 @@ function Counter(){
             </h1>
             this is counter component
 
-            {/* <button onClick={increaseCounter}>+</button>
-            <button onClick={decreaseCounter}>-</button> */}
+            <button onClick={increaseCounter}>+</button>
+            <button onClick={decreaseCounter}>-</button>
         </div>
     )
 }
