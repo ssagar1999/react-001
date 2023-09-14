@@ -3,12 +3,16 @@
 import './App.css';
 import Counter from './Counter';
 
-function App() {
 
+
+function App() {
+let name = 'goku'
+  let arr = [1234234,2234234,39830284092384]
   return (
     <div className="App">
-     <h1>hello all</h1>
-         <Counter />
+     
+     hi all {name}
+
     </div>
   );
 }
